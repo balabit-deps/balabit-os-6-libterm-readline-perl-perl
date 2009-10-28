@@ -1,0 +1,151 @@
+libterm-readline-perl-perl (1.0303-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Standards-Version 3.8.3 (drop perl version dependency)
+  * Add myself to Uploaders and Copyright
+  * Rewrite control description
+  * Use new short debhelper rules format
+  * Use AUTOMATED_TESTING to disable tests (these require /dev, which
+    may not be available in a debootstrapped chroot)
+  * Refreshed copyright to machine-readable format
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza).
+  * debian/watch: use dist-based URL.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Wed, 28 Oct 2009 19:40:21 -0400
+
+libterm-readline-perl-perl (1.0302-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Thu,  1 Jun 2006 17:50:16 +0200
+
+libterm-readline-perl-perl (1.0300-1) unstable; urgency=low
+
+  * New upstream release
+    + the MinLine() method is now compatible with Term::ReadLine.
+      (Closes: #121176)
+  * Template comments cleanup in debian/rules
+  * Don't ignore the status of 'make realclean'.
+  * Really upgraded the debhelper compatibility level to 5.
+  * Upgraded to Standards-Version 3.7.2. No changes needed.
+  * debian/watch: append '00' to the version number if needed.
+  * Depend on ${misc:Depends}, as recommended by debhelper.
+
+ -- Niko Tyni <ntyni@iki.fi>  Thu, 11 May 2006 22:18:53 +0300
+
+libterm-readline-perl-perl (1.0208-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Thu, 16 Mar 2006 13:57:26 +0100
+
+libterm-readline-perl-perl (1.0207-1) unstable; urgency=low
+
+  * New upstream release (closes: #209263) (closes: #145383)
+  * debian/control:
+   - Uploaders: added me
+   - Build-Depends: debhelper (>= 5.0.0) moved here
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Tue,  7 Mar 2006 19:03:10 +0100
+
+libterm-readline-perl-perl (1.0203-4) unstable; urgency=low
+
+  * Fixed a broken debian/watch file
+  * Fixed maintainer email address. (Closes: #343485)
+
+ -- Gunnar Wolf <gwolf@debian.org>  Sun, 05 Feb 2006 11:47:25 -0600
+
+libterm-readline-perl-perl (1.0203-3) unstable; urgency=low
+
+  * New maintainer: Debian pkg-perl group
+  * Moved to Section: perl
+  * Bumped up standards-version to 3.6.2
+
+ -- Gunnar Wolf <gwolf@debian.org>  Tue, 12 Jul 2005 21:20:23 +0300
+
+libterm-readline-perl-perl (1.0203-2) unstable; urgency=low
+
+  * Changed debian/rules to build binary-indep, not arch. (closes: #157507)
+  * debhelper >=4.
+
+ -- Joerg Jaspert <joerg@debian.org>  Tue, 20 Aug 2002 23:18:15 +0200
+
+libterm-readline-perl-perl (1.0203-1) unstable; urgency=low
+
+  * New upstream release
+  * Upstream Changelog says
+    "Unconditional titlecasing of .inputrc "values" broke settings with
+    values such as 'vi' etc (thanks to Russ Southern for a report)." I
+    hope this fixes #145383
+
+ -- Joerg Jaspert <joerg@debian.org>  Mon,  3 Jun 2002 16:27:32 +0200
+
+libterm-readline-perl-perl (1.0202-1) unstable; urgency=low
+
+  * New upstream release:
+    -Warnings on highlight of the right scroll mark '<' fixed
+
+ -- Joerg Jaspert <joerg@debian.org>  Fri, 19 Apr 2002 12:25:30 +0200
+
+libterm-readline-perl-perl (1.0201-2) unstable; urgency=low
+
+  * Arrgh. I should really change my Email. (Control-File)
+
+ -- Joerg Jaspert <joerg@debian.org>  Thu, 18 Apr 2002 02:56:51 +0200
+
+libterm-readline-perl-perl (1.0201-1) unstable; urgency=low
+
+  * New upstream release
+  * Changed my Email to the @debian.org
+
+ -- Joerg Jaspert <joerg@debian.org>  Thu, 18 Apr 2002 02:26:33 +0200
+
+libterm-readline-perl-perl (1.02-1) unstable; urgency=low
+
+  * New Maintainer (closes: #141231)
+  * A very new Upstream Version. Long time ago since last (non-NMU)
+    upload. :)
+  * Acknowledge of NMU Bugfix (closes: #91562)
+  * Updated debian/copyright
+  * Small rework of debian/rules.
+
+ -- Joerg Jaspert (JJ) <joerg@goliathbbs.dnsalias.net>  Sun,  7 Apr 2002 01:49:34 +0200
+
+libterm-readline-perl-perl (0.9906-1.1) unstable; urgency=low
+
+  * NMU
+  * Provide /usr/doc symlinks (closes: #91562).
+  * Install Perl modules under /usr/share/perl5.
+
+ -- Brendan O'Dea <bod@debian.org>  Tue, 31 Jul 2001 11:10:40 +1000
+
+libterm-readline-perl-perl (0.9906-1) unstable; urgency=low
+
+  * New Maintainer.
+  * New upstream version.
+  * Complies with Perl packaging standard 1.0.
+  * Completely rewrote debian/rules to how I do things.
+  * Changed source package name to be the same as the (one) binary package.
+  * Changed priority to optional.
+  * Changed architecture to all since it's only Perl.
+  
+ -- Darren Stalder <torin@daft.com>  Tue, 13 Jul 1999 01:25:50 -0700
+
+term-readline-perl (0.9904-2) unstable; urgency=low
+
+  * Whoops, corrected i386ism in debian/rules.
+
+ -- Ben Gertzfield <che@debian.org>  Tue, 13 Oct 1998 18:05:45 -0700
+
+term-readline-perl (0.9904-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Ben Gertzfield <che@debian.org>  Tue, 13 Oct 1998 17:22:11 -0700
